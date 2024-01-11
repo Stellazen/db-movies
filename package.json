@@ -1,0 +1,24 @@
+{
+  "name": "db-movies",
+  "version": "1.0.0",
+  "description": "Projeto TSX",
+  "main": "index.js",
+  "scripts": {  
+    "test": "echo \"Error: no tests installed\" && exit 1",  
+    "build": "tsc",  
+    "start": "node server.js"
+  },
+    "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "db-movies"
+  },
+  "author": "stellazen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-router-dom": "^5.3.3",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.21.1"
+  }
+}
