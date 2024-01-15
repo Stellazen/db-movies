@@ -1,9 +1,7 @@
 import React from "react";
+function App() {
+  console.log('aqui')
+  return <div>Deu certo?</div>;
+}
 
- function App(){
-    return(
-        console.log("teste aqui")
-    )
- }
-
- export default App;
+export default App;

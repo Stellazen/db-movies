@@ -1,4 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = require("react");
 function App() {
-    return (console.log("teste aqui"));
+    console.log('aqui');
+    return react_1.default.createElement("div", null, "Hello, world!");
 }
-export default App;
+exports.default = App;

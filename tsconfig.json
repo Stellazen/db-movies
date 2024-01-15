@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
-      "target": "ES2016",
+      "target": "ESNext",
       "lib": ["ES2016", "dom"],
       "allowSyntheticDefaultImports": true,
-      "module": "ESNext",
+      "module": "CommonJS",
       "strict": true,
       "outDir": "./dist",
-      "rootDir": "./src"
+      "rootDir": "./src",
+      "jsx": "react",
     }
   }
   
