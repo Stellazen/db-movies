@@ -1,11 +1,11 @@
 const API_URL = 'https://api.themoviedb.org';
 
-const getPopularMovies = async () => {
+const getPopularMovies = async (token) => {
   const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4M2JkZjhkOGIyYTdmMmQzMDVjZTA1MzBjNDBjNjk5YyIsInN1YiI6IjY1OGQ5M2UyMjBlNmE1MGJmNjhiNDkxOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.1BcZAua4_pHWrLhnXUHGpdHKuo5kL3mhF_MVqwRjoSQ'
+      Authorization: `Bearer ${token}`
     }
   };
 
