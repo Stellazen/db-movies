@@ -1,4 +1,4 @@
-import { TOKEN } from '.././utils/config.js'
+import { TOKEN } from '../config'
 const API_URL = 'https://api.themoviedb.org';
 
 
