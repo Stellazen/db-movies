@@ -1,10 +1,20 @@
-// import React from "react";
+import { FunctionComponent } from "react";
 
-const Poster = (props: string | number) => {
-    return(
-        <div>
-        </div>
-    )
+interface PosterProps {
+    id: number;
+    title: string;
+    overview: string;
+    photo: string;
 }
 
-export default Poster
+const Poster: FunctionComponent<PosterProps> = (props) => {
+    return (
+        <div className="container" key={props.id}>
+            <h2>{props.title}</h2>
+            <p>{props.overview}</p>
+            <img src={props.photo} alt={props.title} />
+        </div>
+    );
+};
+
+export default Poster;

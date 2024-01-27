@@ -1,11 +1,13 @@
+import { TOKEN } from '.././utils/config.js'
 const API_URL = 'https://api.themoviedb.org';
 
-const getPopularMovies = async (token) => {
+
+const getPopularMovies = async () => {
   const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${TOKEN}`
     }
   };
 

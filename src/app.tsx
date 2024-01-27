@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { getPopularMovies } from './api/api';
-import { getLocalStorageItem } from './utils/localStorage';
+// import { getLocalStorageItem } from './utils/localStorage';
 
 interface Movie {
   id: number;
@@ -16,8 +16,8 @@ function App() {
   useEffect(() => {
     const fetchMovies = async () => {
       try{
-        const token = getLocalStorageItem('token')
-        const popularMovies = await getPopularMovies(token);
+        //const token = getLocalStorageItem('token')
+        const popularMovies = await getPopularMovies();
         setMovies(popularMovies)
       } catch (error){
         console.log('Não foi possível renderizar filmes')
