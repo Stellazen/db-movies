@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import '../../index.css';
 
 interface PosterProps {
     id: number;
@@ -9,7 +10,7 @@ interface PosterProps {
 
 const Poster: FunctionComponent<PosterProps> = (props) => {
     return (
-        <div className="container" key={props.id}>
+        <div className="bg-" key={props.id}>
             <h2>{props.title}</h2>
             <p>{props.overview}</p>
             <img src={props.photo} alt={props.title} />
